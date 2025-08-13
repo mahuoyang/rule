@@ -30,7 +30,6 @@
     {"tag": "🎮 Steam", "type": "selector", "outbounds": ["🚀 默认代理", "🇭🇰 香港手动", "🇯🇵 日本手动", "🇸🇬 狮城手动", "🇺🇲 美国手动", "🐸 手动选择"]},
     {"tag": "🪟 Microsoft", "type": "selector", "outbounds": ["🇭🇰 香港自动", "🇨🇳 台湾自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇭🇰 香港手动", "🇨🇳 台湾手动", "🇯🇵 日本手动", "🇸🇬 狮城手动", "🇺🇲 美国手动", "🐸 手动选择"]},
     {"tag": "🐬 OneDrive", "type": "selector", "outbounds": ["🇭🇰 香港自动", "🇨🇳 台湾自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇭🇰 香港手动", "🇨🇳 台湾手动", "🇯🇵 日本手动", "🇸🇬 狮城手动", "🇺🇲 美国手动", "🐸 手动选择"]},
-    {"tag": "🌀 Test", "type": "selector", "outbounds": ["🇭🇰 香港自动", "🇨🇳 台湾自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇭🇰 香港手动", "🇨🇳 台湾手动", "🇯🇵 日本手动", "🇸🇬 狮城手动", "🇺🇲 美国手动", "🐸 手动选择", "♻️ 自动选择"]},
     {"tag": "🍏 Apple", "type": "selector", "outbounds": ["🎯 全球直连", "🇭🇰 香港手动", "🇨🇳 台湾手动", "🇯🇵 日本手动", "🇸🇬 狮城手动", "🇺🇲 美国手动"]},
     {"tag": "🐠 漏网之鱼", "type": "selector", "outbounds": ["🚀 默认代理", "🎯 全球直连"]},
     {"tag": "🇭🇰 香港手动", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇭🇰|HK|hk|香港|港|HongKong"]}, {"action": "exclude", "keywords": ["免费"]}]},
@@ -74,7 +73,6 @@
       {"rule_set": "geoip-apple", "outbound": "🍏 Apple"},
       {"rule_set": "geoip-telegram", "outbound": "📲 Telegram"},
       {"rule_set": "geoip-netflix", "outbound": "🎥 Netflix"},
-      {"rule_set": "geosite-test", "outbound": "🌀 Test"},
       {"rule_set": "geoip-cn", "outbound": "🎯 全球直连"}
     ],
     "rule_set": [
@@ -98,8 +96,7 @@
       {"tag": "geoip-telegram", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/telegram.srs", "download_detour": "🎯 全球直连"},
       {"tag": "geoip-netflix", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/netflix.srs", "download_detour": "🎯 全球直连"},
       {"tag": "geoip-cn", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://github.com/qljsyph/ruleset-icon/raw/refs/heads/main/sing-box/geoip/China-ASN-combined-ip.srs", "download_detour": "🎯 全球直连"},
-      {"tag": "geosite-test", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Check.list", "download_detour": "🎯 全球直连"}
-    ],
+     ],
     "final": "🐠 漏网之鱼",
     "auto_detect_interface": true,
     "default_domain_resolver": {"server": "public"}
